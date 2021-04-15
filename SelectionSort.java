@@ -58,13 +58,20 @@ public class SelectionSort
 				{
 					temp = x[j];
 					x[j] = x[i];
+<<<<<<< HEAD
 					x[i] = temp;  
+=======
+					x[i] = temp;
+>>>>>>> Pos/Neg
 				}
 			} // end of inner for loop
 		} // end of outer for loop
 
 	return x;
 	} // end of basicSelectionSort method}
+<<<<<<< HEAD
 >>>>>>> Mix/Dup
+=======
+>>>>>>> Pos/Neg
 }
 	

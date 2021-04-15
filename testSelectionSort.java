@@ -14,6 +14,7 @@ public class testSelectionSort
 	@Test public void test()
 	{
 <<<<<<< HEAD
+<<<<<<< HEAD
 		testPositive();
 		testNegative();
 		testMixed();
@@ -32,17 +33,25 @@ public class testSelectionSort
 		testMixed();
 		testDuplicates();
 >>>>>>> Mix/Dup
+=======
+		testPositive();
+		testNegative();
+>>>>>>> Pos/Neg
 	}
 
 	public testSelectionSort() {}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Pos/Neg
 	public void testPositive()
 	{
 		int[] arr = new int[5];
 		arr[0] = 8;
 		arr[1] = 9;
 		arr[2] = 7;
+<<<<<<< HEAD
 		arr[3] = -10;
 		arr[4] = -2;
 
@@ -53,10 +62,23 @@ public class testSelectionSort
 		Sortedarr[2] = 7;
 		Sortedarr[3] = 8;
 		Sortedarr[4] = 9;
+=======
+		arr[3] = 10;
+		arr[4] = 2;
+
+		int[] Sortedarr = new int[5];
+
+		Sortedarr[0] = 2;
+		Sortedarr[1] = 7;
+		Sortedarr[2] = 8;
+		Sortedarr[3] = 9;
+		Sortedarr[4] = 10;
+>>>>>>> Pos/Neg
 
 		SelectionSort sort = new SelectionSort();
 
 		arr = sort.basicSelectionSort(arr);
+<<<<<<< HEAD
 
 		for (int i = 0; i < 5; i++)
 		{
@@ -88,6 +110,12 @@ public class testSelectionSort
 		for (int i = 0; i < 5; i++)
 		{
 					assertTrue("Element sorted",arr[i] == Sortedarr[i]);
+=======
+
+		for (int i = 0; i < 5; i++)
+		{
+        	assertTrue("Element sorted",arr[i] == Sortedarr[i]);
+>>>>>>> Pos/Neg
 		}
 	}
 =======
@@ -138,10 +166,39 @@ public class testSelectionSort
 
 			arr = sort.basicSelectionSort(arr);
 
+<<<<<<< HEAD
 			for (int i = 0; i < 5; i++)
 			{
 				assertTrue("Element sorted",arr[i] == Sortedarr[i]);
 			}
 		}
+=======
+	public void testNegative()
+	{
+		int[] arr = new int[5];
+		arr[0] = -8;
+		arr[1] = -9;
+		arr[2] = -7;
+		arr[3] = -10;
+		arr[4] = -2;
+
+		int[] Sortedarr = new int[5];
+
+		Sortedarr[0] = -10;
+		Sortedarr[1] = -9;
+		Sortedarr[2] = -8;
+		Sortedarr[3] = -7;
+		Sortedarr[4] = -2;
+
+		SelectionSort sort = new SelectionSort();
+
+		arr = sort.basicSelectionSort(arr);
+
+		for (int i = 0; i < 5; i++)
+		{
+					assertTrue("Element sorted",arr[i] == Sortedarr[i]);
+		}
+	}
+>>>>>>> Pos/Neg
 }
 >>>>>>> Mix/Dup
